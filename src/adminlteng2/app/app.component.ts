@@ -1,4 +1,5 @@
 import { Component,Inject,OnInit } from '@angular/core';
+import { Title }     from '@angular/platform-browser';
 
 import { AppConfig }  from './app.config';
 
@@ -10,24 +11,25 @@ declare var $:any;
 })
 export class AppComponent extends OnInit { 
     appConfig:AppConfig;
-    constructor(){
+
+    private _titleService:Title;
+
+    constructor(titleService: Title){
         super();
+        this._titleService=titleService;
         this.InitAppConfig();
     }
 
     private InitAppConfig(){
         this.appConfig=AppConfig.getAppInfo();
+        this._titleService.setTitle(this.appConfig.name);
     }
 
     ngOnInit(): void {
         console.log('Component 初始化');
-        //$.AdminLTE.layout.active();//.fix();
-        //this.fix();
-        //this.fixSidebar();
         this.initMenuTree('.sidebar');
         this.activate();
 
-        //$.AdminLTE.tree('.sidebar');
     }
 
     /**
@@ -150,10 +152,11 @@ export class AppComponent extends OnInit {
                 color: "rgba(0,0,0,0.2)",
                 size: "3px"
             });
-            /**/
+            /*
+
             slimScroll.css('overflow','visible');
             $('.slimScrollDiv').css('overflow','visible');
-
+*/
         }
 
     }
