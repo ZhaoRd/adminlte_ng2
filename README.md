@@ -14,3 +14,9 @@ angular2   adminlte 模板
 4. 使用vs code 打开文件夹 adminlteng2
 5. ctrl+shift+b 编译，F5 运行
 
+### 特性功能
+* ~~核心代码库迁移~~
+* 路由(1%)
+* 插件
+
+
