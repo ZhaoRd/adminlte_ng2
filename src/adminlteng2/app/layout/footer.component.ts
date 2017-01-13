@@ -5,8 +5,9 @@ import { AppConfig }  from '.././app.config';
 import { AppComponent }  from '.././app.component';
 
 @Component({
+    moduleId:module.id,
     selector: 'my-app-footer',
-    templateUrl: `app/layout/footer.html`
+    templateUrl: `footer.html`
 })
 export class FooterComponent { 
   
@@ -14,5 +15,4 @@ export class FooterComponent {
     constructor(private rootComp: AppComponent) { 
         this.appConfig=rootComp.appConfig;
     }
- /**/
 }

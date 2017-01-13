@@ -3,8 +3,9 @@ import { AppConfig }  from '.././app.config';
 import { AppComponent }  from '.././app.component';
 
 @Component({
+    moduleId:module.id,
     selector: 'my-app-header',
-    templateUrl: `app/layout/header.html`
+    templateUrl: `header.html`
 })
 export class HeaderComponent { 
 

@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
+    moduleId:module.id,
     selector: 'app-main-sidebar',
-    templateUrl: `app/layout/main_sidebar.html`
+    templateUrl: `main_sidebar.html`
 })
 export class MainSidebarComponent { }

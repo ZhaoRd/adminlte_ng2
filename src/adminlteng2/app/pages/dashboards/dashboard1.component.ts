@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
+    moduleId:module.id,
     selector: 'dashboard1',
-    templateUrl: `app/pages/dashboards/dashboard1.html`
+    templateUrl: `dashboard1.html`
 })
 export class DashboardComponent {
-
-    show="我是vm内容";
 
  }

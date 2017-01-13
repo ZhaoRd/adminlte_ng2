@@ -6,8 +6,12 @@ import { AppConfig }  from './app.config';
 declare var $:any;
 
 @Component({
-    selector: 'my-app',
-    templateUrl: `app/app.html`
+    selector: 'body',
+    templateUrl: `app/app.html`,
+    host:{
+      '[class.sidebar-collapse]':"!appConfig.sidebarIsOpen",
+      '[class.fixed]':"appConfig.layout.isFixed"
+    }
 })
 export class AppComponent extends OnInit { 
     appConfig:AppConfig;
