@@ -8,7 +8,6 @@ import { MainSidebarComponent } from './layout/mainsidebar.component'
 import {FooterComponent} from './layout/footer.component'
 
 import {ADirective} from './directives/app.directive'
-import {SlimScrollDirective} from './directives/app.directive.slimscroll'
 
 @NgModule({
   imports:      [ BrowserModule,AppRoutingModule
@@ -18,8 +17,7 @@ import {SlimScrollDirective} from './directives/app.directive.slimscroll'
     HeaderComponent ,
     MainSidebarComponent,
     FooterComponent,
-    ADirective,
-    SlimScrollDirective
+    ADirective
     ],
   bootstrap:    [ AppComponent ]
 })
