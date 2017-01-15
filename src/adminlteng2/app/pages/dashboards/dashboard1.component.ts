@@ -154,6 +154,7 @@ this.sparkline2={
 
     }
 
+    worldMap:Object;
     
     private initWorldMap():void{
 
@@ -173,10 +174,7 @@ this.sparkline2={
     "RU": 3000 //Russia
   };
 
-
-        
-  //World map by jvectormap
-  $('#world-map').vectorMap({
+  this.worldMap={
     map: 'world_mill_en',
     backgroundColor: "transparent",
     regionStyle: {
@@ -199,9 +197,8 @@ this.sparkline2={
       if (typeof visitorsData[code] != "undefined")
         el.html(el.html() + ': ' + visitorsData[code] + ' new visitors');
     }
-  });
-
-        
+  }
+  
     }
 
   
@@ -230,26 +227,22 @@ this.sparkline2={
 */
 
   }
-
+sortableOpt:Object;
     private initElement():void{
         
-  //Make the dashboard widgets sortable Using jquery UI
-  $(".connectedSortable").sortable({
+        this.sortableOpt={
     placeholder: "sort-highlight",
     connectWith: ".connectedSortable",
     handle: ".box-header, .nav-tabs",
     forcePlaceholderSize: true,
     zIndex: 999999
-  });
+  };
+  //Make the dashboard widgets sortable Using jquery UI
+//  $(".connectedSortable").sortable();
+
+  /*
   $(".connectedSortable .box-header, .connectedSortable .nav-tabs-custom").css("cursor", "move");
-
-/*
-  //SLIMSCROLL FOR CHAT WIDGET
-  $('#chat-box').slimScroll({
-    height: '250px'
-  });
 */
-
 
     }
 

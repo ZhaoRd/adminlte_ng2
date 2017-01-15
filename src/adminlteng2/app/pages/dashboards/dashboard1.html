@@ -78,7 +78,8 @@
       <!-- Main row -->
       <div class="row">
         <!-- Left col -->
-        <section class="col-lg-7 connectedSortable">
+        <section class="col-lg-7 connectedSortable"
+        [ngSortable]="sortableOpt">
           <!-- Custom tabs (Charts with tabs)-->
           <div class="nav-tabs-custom">
             <!-- Tabs within a box -->
@@ -340,7 +341,9 @@
         </section>
         <!-- /.Left col -->
         <!-- right col (We are only adding the ID to make the widgets sortable)-->
-        <section class="col-lg-5 connectedSortable">
+        <section class="col-lg-5 connectedSortable"
+        [ngSortable]="sortableOpt"
+        >
 
           <!-- Map box -->
           <div class="box box-solid bg-light-blue-gradient">
@@ -364,7 +367,9 @@
               </h3>
             </div>
             <div class="box-body">
-              <div id="world-map" style="height: 250px; width: 100%;"></div>
+              <div id="world-map" style="height: 250px; width: 100%;"
+              [ngVectorMap]="worldMap"
+              ></div>
             </div>
             <!-- /.box-body-->
             <div class="box-footer no-border">

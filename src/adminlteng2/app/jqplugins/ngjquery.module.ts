@@ -9,6 +9,8 @@ import {NgDaterangepickerDirective} from './datepicker/daterangepicker.directive
 
 import {NgSparklineChartDirective} from './sparklineChart/sparklinechart.directive'
 
+import {NgVectorMapDirective} from './vectorMap/vectormap.directive'
+import {NgSortableDirective} from './sortable/sortable.directive'
 
 
 @NgModule({
@@ -17,12 +19,16 @@ import {NgSparklineChartDirective} from './sparklineChart/sparklinechart.directi
       NgSlimScrollDirective,
       NgKnobDirective,NgWysihtml5Directive,NgDatepickerDirective,
       NgDaterangepickerDirective,
-      NgSparklineChartDirective
+      NgSparklineChartDirective,
+      NgVectorMapDirective,
+      NgSortableDirective
     ],
     exports: [ NgSlimScrollDirective,NgKnobDirective ,
     NgWysihtml5Directive,NgDatepickerDirective,
     NgDaterangepickerDirective,
-    NgSparklineChartDirective]
+    NgSparklineChartDirective,
+    NgVectorMapDirective,
+    NgSortableDirective]
 })
 export class NgJqueryModule { 
 
