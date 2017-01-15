@@ -56,6 +56,8 @@ import {ProfileComponent} from './pages/examples/profile.component'
 /* example import*/
 
 
+import {NgJqueryModule} from './jqplugins/ngjquery.module'
+
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard1', pathMatch: 'full' },
   { path: 'dashboard1',  component: DashboardComponent },
@@ -110,13 +112,13 @@ const routes: Routes = [
   { path: 'error500',  component: Error500Component },
   { path: 'invoice',  component: InvoiceComponent },
   { path: 'pacepage',  component: PacePageComponent },
-  { path: 'profile',  component: ProfileComponent },
+  { path: 'profile',  component: ProfileComponent }
   /* example */
 
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
+  imports: [ RouterModule.forRoot(routes),NgJqueryModule ],
   declarations:[
     DashboardComponent,
     Dashboard2Component,
@@ -164,7 +166,7 @@ const routes: Routes = [
     Error500Component,
     InvoiceComponent,
     PacePageComponent,
-    ProfileComponent,
+    ProfileComponent
     /** example */
 
   ],

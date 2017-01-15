@@ -1,6 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 
-declare var $:any;
+    declare var $:any;
 declare var moment:any;
 declare var Morris:any;
 
@@ -10,6 +10,8 @@ declare var Morris:any;
     templateUrl: `dashboard1.html`
 })
 export class DashboardComponent  extends OnInit {
+
+    scrollHeight:string="250px";
 
     ngOnInit(): void {
         this.initSalesChart();
@@ -24,47 +26,44 @@ export class DashboardComponent  extends OnInit {
     private initKnobAndCalendar():void{
 
   /* jQueryKnob */
-  $(".knob").knob();
+//  $(".knob").knob();
 
 
   //The Calender
-  $("#calendar").datepicker();
+  //$("#calendar").datepicker();
 
 
   //bootstrap WYSIHTML5 - text editor
-  $(".textarea").wysihtml5();
+ // $(".textarea").wysihtml5();
 
     }
 
+    sparkline1:Object;
+    sparkline2:Object;
+    sparkline3:Object;
+
     private initSparklineCharts():void{
+        var opt={
+type: 'line',
+          lineColor: '#92c1dc',
+          fillColor: "#ebf4f9",
+          height: '50',
+          width: '80'
+        };
+      this.sparkline1={
+        values:[1000, 1200, 920, 927, 931, 1027, 819, 930, 1021],
+        options:opt
+      };
 
+this.sparkline2={
+        values:[515, 519, 520, 522, 652, 810, 370, 627, 319, 630, 921],
+        options:opt
+      };
 
-  //Sparkline charts
-  var myvalues = [1000, 1200, 920, 927, 931, 1027, 819, 930, 1021];
-  $('#sparkline-1').sparkline(myvalues, {
-    type: 'line',
-    lineColor: '#92c1dc',
-    fillColor: "#ebf4f9",
-    height: '50',
-    width: '80'
-  });
-  myvalues = [515, 519, 520, 522, 652, 810, 370, 627, 319, 630, 921];
-  $('#sparkline-2').sparkline(myvalues, {
-    type: 'line',
-    lineColor: '#92c1dc',
-    fillColor: "#ebf4f9",
-    height: '50',
-    width: '80'
-  });
-  myvalues = [15, 19, 20, 22, 33, 27, 31, 27, 19, 30, 21];
-  $('#sparkline-3').sparkline(myvalues, {
-    type: 'line',
-    lineColor: '#92c1dc',
-    fillColor: "#ebf4f9",
-    height: '50',
-    width: '80'
-  });
-
+      this.sparkline3={
+        values:[15, 19, 20, 22, 33, 27, 31, 27, 19, 30, 21],
+        options:opt
+      };
 
 
     }
@@ -253,11 +252,12 @@ export class DashboardComponent  extends OnInit {
   });
   $(".connectedSortable .box-header, .connectedSortable .nav-tabs-custom").css("cursor", "move");
 
+/*
   //SLIMSCROLL FOR CHAT WIDGET
   $('#chat-box').slimScroll({
     height: '250px'
   });
-
+*/
 
 
     }
