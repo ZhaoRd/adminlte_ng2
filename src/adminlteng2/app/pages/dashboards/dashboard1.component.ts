@@ -1,6 +1,11 @@
 import { Component,OnInit } from '@angular/core';
+//import 'echarts';
+//var echarts = require('echarts');
 
-    declare var $:any;
+const echarts = require('echarts');
+
+//declare var echarts:any;
+declare var $:any;
 declare var moment:any;
 declare var Morris:any;
 
@@ -21,10 +26,44 @@ export class DashboardComponent  extends OnInit {
         this.initKnobAndCalendar();
         this.initElement();
         this.initTodoList();
+        this.initEchart();
     }
 
     private initKnobAndCalendar():void{
 
+    }
+    echartOpt:Object;
+    private initEchart():void{
+
+
+        // 指定图表的配置项和数据
+        this.echartOpt = {
+            title: {
+                text: 'ECharts 入门示例'
+            },
+            tooltip: {},
+            legend: {
+                data:['销量']
+            },
+            xAxis: {
+                data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+            },
+            yAxis: {},
+            series: [{
+                name: '销量',
+                type: 'bar',
+                data: [5, 20, 36, 10, 10, 20]
+            }]
+        };
+
+
+      /*
+// 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echart_main'));
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+        */
     }
 
     sparkline1:Object;
@@ -78,8 +117,123 @@ this.sparkline2={
 
     }
 
+    salesArea:Object;
+    salesDonut:Object;
+
+    private showSalesArea():void{
+
+      
+      this.salesArea = {
+    title: {
+        text: 'Sales'
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['Item 1','Item 2']
+    },
+    toolbox: {
+        feature: {
+            saveAsImage: {}
+        }
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : ['2011 Q1','2011 Q2','2011 Q3','2011 Q3',
+            '2012 Q1','2012 Q2','2012 Q3']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'Item 1',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[2666, 2778, 4912, 3767, 6810, 5670, 4820]
+        },
+        {
+            name:'Item 2',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[2666, 2294, 1969, 3597, 1914, 4293, 3795]
+        }
+    ]
+};
+
+    }
+
+    private showSalesDonut():void{
+
+
+
+this.salesDonut={
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+        data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
+    },
+    series: [
+        {
+            name:'访问来源',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:335, name:'直接访问'},
+                {value:310, name:'邮件营销'},
+                {value:234, name:'联盟广告'},
+                {value:135, name:'视频广告'},
+                {value:1548, name:'搜索引擎'}
+            ]
+        }
+    ]
+};
+
+    }
+
     private initSalesChart():void{
+
+
+
       // Sales chart
+      
   var area = new Morris.Area({
     element: 'revenue-chart',
     resize: true,
@@ -101,6 +255,9 @@ this.sparkline2={
     lineColors: ['#a0d0e0', '#3c8dbc'],
     hideHover: 'auto'
   });
+
+
+
   var line = new Morris.Line({
     element: 'line-chart',
     resize: true,
@@ -130,6 +287,10 @@ this.sparkline2={
     gridTextFamily: "Open Sans",
     gridTextSize: 10
   });
+/**/
+
+
+
 
   //Donut Chart
   var donut = new Morris.Donut({
@@ -143,12 +304,18 @@ this.sparkline2={
     ],
     hideHover: 'auto'
   });
+ /* */
 
   //Fix for charts under tabs
-  $('.box ul.nav a').on('shown.bs.tab', function () {
+  $('.nav-tabs-custom ul.nav a').on('shown.bs.tab', function () {
     area.redraw();
-    donut.redraw();
-    line.redraw();
+   donut.redraw();
+   line.redraw();
+   /*
+   console.log('shown.bs.tab');
+    _self.showSalesArea();
+    _self.showSalesDonut();
+     */ 
   });
 
 
