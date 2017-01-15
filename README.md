@@ -16,13 +16,19 @@ angular2   adminlte 模板
 
 ### 特性功能
 * ~~核心代码库迁移~~
-* 路由(1%)
-* 插件
+* 路由(90%)
+* 插件(指令实现jquery 插件)
+	* slimscroll(60%)
+	* vectormap (90%)
+	* spanklinechart(90%)
+	* ~~stortable(100%)~~
+	* daterangepicker(90%)
+	* datepicker(90%)
 * 引入 bootstrap angular2
 * 引入 Material design 样式
 * 页面
 	* 工作台
-		* 工作台1(30%)
+		* 工作台1(70%)
 		* 工作台2(10%)
 	* 布局选项(0%)
 	* 部件(10%)
