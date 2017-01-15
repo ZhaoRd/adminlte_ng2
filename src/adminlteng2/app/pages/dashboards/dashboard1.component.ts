@@ -25,17 +25,6 @@ export class DashboardComponent  extends OnInit {
 
     private initKnobAndCalendar():void{
 
-  /* jQueryKnob */
-//  $(".knob").knob();
-
-
-  //The Calender
-  //$("#calendar").datepicker();
-
-
-  //bootstrap WYSIHTML5 - text editor
- // $(".textarea").wysihtml5();
-
     }
 
     sparkline1:Object;
@@ -69,6 +58,8 @@ this.sparkline2={
     }
 
     private initDateRange():void{
+
+      /*
           $('.daterange').daterangepicker({
     ranges: {
       'Today': [moment(), moment()],
@@ -83,7 +74,7 @@ this.sparkline2={
   }, function (start:any, end:any) {
     window.alert("You chose: " + start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
   });
-
+*/
 
     }
 

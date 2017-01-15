@@ -4,6 +4,7 @@ import {NgKnobDirective} from './knob/knob.directive'
 import {NgWysihtml5Directive} from './wysihtml5/wysihtml5.directive'
 
 import {NgDatepickerDirective} from './datepicker/datepicker.directive'
+import {NgDaterangepickerDirective} from './datepicker/daterangepicker.directive'
 
 
 import {NgSparklineChartDirective} from './sparklineChart/sparklinechart.directive'
@@ -15,10 +16,13 @@ import {NgSparklineChartDirective} from './sparklineChart/sparklinechart.directi
   declarations: [ 
       NgSlimScrollDirective,
       NgKnobDirective,NgWysihtml5Directive,NgDatepickerDirective,
+      NgDaterangepickerDirective,
       NgSparklineChartDirective
     ],
     exports: [ NgSlimScrollDirective,NgKnobDirective ,
-    NgWysihtml5Directive,NgDatepickerDirective,NgSparklineChartDirective]
+    NgWysihtml5Directive,NgDatepickerDirective,
+    NgDaterangepickerDirective,
+    NgSparklineChartDirective]
 })
 export class NgJqueryModule { 
 
