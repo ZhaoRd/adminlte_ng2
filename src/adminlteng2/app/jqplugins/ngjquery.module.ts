@@ -12,6 +12,7 @@ import {NgSparklineChartDirective} from './sparklineChart/sparklinechart.directi
 import {NgVectorMapDirective} from './vectorMap/vectormap.directive'
 import {NgSortableDirective} from './sortable/sortable.directive'
 import {NgEchartDirective} from './echart/echart.directive'
+import {NgChartjsDirective} from './chartjs/chartjs.directive'
 
 
 @NgModule({
@@ -22,7 +23,7 @@ import {NgEchartDirective} from './echart/echart.directive'
       NgDaterangepickerDirective,
       NgSparklineChartDirective,
       NgVectorMapDirective,
-      NgSortableDirective,NgEchartDirective
+      NgSortableDirective,NgEchartDirective,NgChartjsDirective
 
     ],
     exports: [ NgSlimScrollDirective,NgKnobDirective ,
@@ -31,7 +32,7 @@ import {NgEchartDirective} from './echart/echart.directive'
     NgSparklineChartDirective,
     NgVectorMapDirective,
     NgSortableDirective,
-    NgEchartDirective]
+    NgEchartDirective,NgChartjsDirective]
 })
 export class NgJqueryModule { 
 

@@ -28,7 +28,9 @@
             </div>
             <div class="box-body">
               <div class="chart">
-                <canvas id="areaChart" style="height:250px"></canvas>
+                <canvas id="areaChart" style="height:250px"
+                [ngChartjs]="areaChartJs"
+                ></canvas>
               </div>
             </div>
             <!-- /.box-body -->
@@ -47,7 +49,9 @@
               </div>
             </div>
             <div class="box-body">
-              <canvas id="pieChart" style="height:250px"></canvas>
+              <canvas id="pieChart" style="height:250px"
+               [ngChartjs]="pieChartJs"
+              ></canvas>
             </div>
             <!-- /.box-body -->
           </div>
@@ -69,7 +73,9 @@
             </div>
             <div class="box-body">
               <div class="chart">
-                <canvas id="lineChart" style="height:250px"></canvas>
+                <canvas id="lineChart" style="height:250px"
+                [ngChartjs]="lineChartJs"
+                ></canvas>
               </div>
             </div>
             <!-- /.box-body -->
@@ -89,7 +95,9 @@
             </div>
             <div class="box-body">
               <div class="chart">
-                <canvas id="barChart" style="height:230px"></canvas>
+                <canvas id="barChart" style="height:230px"
+                 [ngChartjs]="barChartJs"
+                ></canvas>
               </div>
             </div>
             <!-- /.box-body -->

@@ -106,7 +106,9 @@
 
                   <div class="chart">
                     <!-- Sales Chart Canvas -->
-                    <canvas id="salesChart" style="height: 180px;"></canvas>
+                    <canvas id="salesChart" style="height: 180px;"
+                    [ngChartjs]="lineChartJs"
+                    ></canvas>
                   </div>
                   <!-- /.chart-responsive -->
                 </div>
@@ -713,7 +715,9 @@
               <div class="row">
                 <div class="col-md-8">
                   <div class="chart-responsive">
-                    <canvas id="pieChart" height="150"></canvas>
+                    <canvas id="pieChart" height="150"
+                    [ngChartjs]="pieChartJs"
+                    ></canvas>
                   </div>
                   <!-- ./chart-responsive -->
                 </div>
