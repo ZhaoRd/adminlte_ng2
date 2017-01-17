@@ -46,7 +46,7 @@ export class AppConfig{
 
       AppConfig._instance=new AppConfig();
       AppConfig._instance.name="AdminLTE-AngularJs2";
-      AppConfig._instance.version="0.0.1";
+      AppConfig._instance.version="0.0.3";
       AppConfig._instance.year=new Date().getFullYear();
       return AppConfig._instance;
   }

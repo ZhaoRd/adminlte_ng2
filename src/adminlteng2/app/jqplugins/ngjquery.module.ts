@@ -14,6 +14,8 @@ import {NgSortableDirective} from './sortable/sortable.directive'
 import {NgEchartDirective} from './echart/echart.directive'
 import {NgChartjsDirective} from './chartjs/chartjs.directive'
 
+import {NgDatatableDirective} from './datatable/datatable.directive'
+
 
 @NgModule({
   imports:      [ ],
@@ -23,7 +25,7 @@ import {NgChartjsDirective} from './chartjs/chartjs.directive'
       NgDaterangepickerDirective,
       NgSparklineChartDirective,
       NgVectorMapDirective,
-      NgSortableDirective,NgEchartDirective,NgChartjsDirective
+      NgSortableDirective,NgEchartDirective,NgChartjsDirective,NgDatatableDirective
 
     ],
     exports: [ NgSlimScrollDirective,NgKnobDirective ,
@@ -32,7 +34,8 @@ import {NgChartjsDirective} from './chartjs/chartjs.directive'
     NgSparklineChartDirective,
     NgVectorMapDirective,
     NgSortableDirective,
-    NgEchartDirective,NgChartjsDirective]
+    NgEchartDirective,NgChartjsDirective,
+    NgDatatableDirective]
 })
 export class NgJqueryModule { 
 

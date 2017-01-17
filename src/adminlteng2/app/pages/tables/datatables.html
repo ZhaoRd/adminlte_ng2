@@ -21,7 +21,8 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <table id="example2" class="table table-bordered table-hover">
+              <table id="example2" class="table table-bordered table-hover"
+              [ngDatatable]="dt2Option">
                 <thead>
                 <tr>
                   <th>Rendering engine</th>
@@ -461,7 +462,9 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <table id="example1" class="table table-bordered table-striped">
+              <table id="example1" class="table table-bordered table-striped"
+              ngDatatable
+              >
                 <thead>
                 <tr>
                   <th>Rendering engine</th>
