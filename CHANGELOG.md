@@ -1,4 +1,11 @@
-## AdminLTE Angular Documentation  Changelog
+## AdminLTE Angular2 Documentation  Changelog
+
+<a name="0.0.3"></a>
+# 0.0.3 
+* 完善工作台2界面、ChartJS界面、UIElements 界面、Forms界面、Tables界面、Calendar界面
+* 添加 echart 插件
+* 添加 datatables基础指令
+* 其他功能完善
 
 <a name="0.0.2"></a>
 # 0.0.2 
