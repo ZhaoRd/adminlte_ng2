@@ -1,0 +1,152 @@
+<section class="content-header">
+    <h1>
+        Alerts
+        <small>Bootstrap Alerts</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Alerts</li>
+    </ol>
+</section>
+
+
+<section class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <alert type="info">
+                <strong>更多：</strong>
+                 <a href="http://valor-software.com/ng2-bootstrap/#/alerts" class="alert-link">
+                     http://valor-software.com/ng2-bootstrap/#/alerts
+                     </a>
+   
+            </alert>
+        </div>
+
+    </div>
+    <div class="row">
+        <section class="col-lg-6">
+
+          <div class="box box-success">
+            <div class="box-header">
+                  <h3 class="box-title">Examples</h3>
+            </div>
+
+            <div class="box-body"  >
+
+
+    <alert type="success">
+      <strong>Well done!</strong> You successfully read this important alert message.
+    </alert>
+    <alert type="info">
+      <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+    </alert>
+    <alert type="warning">
+      <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </alert>
+    <alert type="danger">
+      <strong>Oh snap!</strong> Change a few things up and try submitting again.
+    </alert>
+
+
+            </div>
+          </div>
+
+<div class="box box-success">
+            <div class="box-header">
+                  <h3 class="box-title">Link color</h3>
+            </div>
+
+            <div class="box-body"  >
+
+
+
+    <alert type="success">
+      <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+    </alert>
+    <alert type="info">
+      <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+    </alert>
+    <alert type="warning">
+      <strong>Warning!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good</a>.
+    </alert>
+    <alert type="danger">
+      <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+    </alert>
+
+
+
+
+            </div>
+</div>
+
+<div class="box box-success">
+            <div class="box-header">
+                  <h3 class="box-title">Additional content</h3>
+            </div>
+
+            <div class="box-body"  >
+
+
+    <alert type="success">
+      <h4 class="alert-heading">Well done!</h4>
+      <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+      <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+    </alert>
+
+
+            </div>
+</div>
+
+
+
+
+        </section>
+
+        <section class="col-lg-6">
+
+ <div class="box box-success">
+            <div class="box-header">
+                  <h3 class="box-title">Dismissing</h3>
+            </div>
+
+            <div class="box-body"  >
+
+
+    <div *ngFor="let alert of alerts">
+      <alert [type]="alert.type" dismissible="true">{{ alert.msg }}</alert>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+
+
+
+
+            </div>
+</div>
+
+
+<div class="box box-success">
+            <div class="box-header">
+                  <h3 class="box-title">Dynamic html</h3>
+            </div>
+
+            <div class="box-body"  >
+
+           
+
+    <div *ngFor="let alert of dynamicHtml.alerts">
+      <alert [type]="alert.type"><span [innerHtml]="alert.msg"></span></alert>
+    </div>
+
+
+           
+            </div>
+</div>
+
+        </section>
+    </div>
+</section>
+
+
+
+
+
