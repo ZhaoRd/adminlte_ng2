@@ -2,16 +2,6 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule ,Routes }   from '@angular/router';
 import { FormsModule }   from '@angular/forms';
-/* bootstrap */
-import {AccordionDemoComponent
-  } from './pages/bootstrap/accordion.component'
-
-
-import {AlertsDemoComponent
-  } from './pages/bootstrap/alerts.component'
-
-
-/* bootstrap */
 
 import {DashboardComponent} from './pages/dashboards/dashboard1.component'
 import {Dashboard2Component} from './pages/dashboards/dashboard2.component'
@@ -71,8 +61,6 @@ import {ProfileComponent} from './pages/examples/profile.component'
 import {NgJqueryModule} from './jqplugins/ngjquery.module'
 
 
-import { AccordionModule,AlertModule  } from 'ng2-bootstrap/ng2-bootstrap';
-
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard1', pathMatch: 'full' },
@@ -82,8 +70,8 @@ const routes: Routes = [
   { path: 'widget',  component: WidgetIndexComponent },
 
 /* bootstrap */
-{ path: 'bsaccordion',  component: AccordionDemoComponent },
-{ path: 'bsalerts',  component: AlertsDemoComponent },
+{ path: 'bs', loadChildren:"./app/pages/pages.module#PagesModule"/* component: AccordionDemoComponent*/ },
+/*{ path: 'bsalerts',  component: AlertsDemoComponent },*/
 
 
 /* bootstrap */
@@ -144,8 +132,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [ RouterModule.forRoot(routes),NgJqueryModule,
-  AccordionModule.forRoot(),
-  AlertModule.forRoot(),
+  
   BrowserModule,FormsModule ],
   declarations:[
     DashboardComponent,
@@ -153,8 +140,10 @@ const routes: Routes = [
     WidgetIndexComponent,
 
     /** bootstrap */
+    /*
     AccordionDemoComponent,
     AlertsDemoComponent,
+    */
    /** bootstrap */
 
     /** charts */
