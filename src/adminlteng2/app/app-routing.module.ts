@@ -146,7 +146,7 @@ const routes: Routes = [
   imports: [ RouterModule.forRoot(routes),NgJqueryModule,
   AccordionModule.forRoot(),
   AlertModule.forRoot(),
-  CommonModule,FormsModule ],
+  BrowserModule,FormsModule ],
   declarations:[
     DashboardComponent,
     Dashboard2Component,
