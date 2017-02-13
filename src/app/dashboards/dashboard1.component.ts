@@ -13,8 +13,6 @@ export class Dashboard1Component {
     
     constructor() { 
 
-
-        
     }
 
     public ngOnInit():void{

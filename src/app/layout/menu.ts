@@ -1,34 +1,13 @@
-export class MenuItem{
+import { MenuItem } from './menu-item';
 
-    public display:string="";
-    public icon:string=null;
-    //public isOpend:
-    public isExpand:boolean=false;
-    public href:string="";
-    public routerLink:string="";
+export class Menu {
+    name: string = '';
+    displayName: string = '';
+    items: MenuItem[];
 
-    public items:Array<MenuItem>=[]
-  
-    constructor(display:string,icon:string,href:string,routerLink:string,items:Array<MenuItem>){
-
-        this.display=display;
-        this.icon=icon;
-        this.href=href;
-        this.routerLink=routerLink;
-        this.items=items;
-
+    constructor(name: string, displayName: string, items: MenuItem[]) {
+        this.name = name;
+        this.displayName = displayName;
+        this.items = items;
     }
-
-    public  iconIsNull():boolean{
-        return this.icon==null;
-    }
-
-    public childrenIsEmpty():boolean{
-        return this.items.length==0;
-    }
-
-    public expand():void{
-        this.isExpand=!this.isExpand;
-    }
-
 }

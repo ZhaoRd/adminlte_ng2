@@ -1,0 +1,33 @@
+import { NgModule } from '@angular/core';
+import {AppCommonModule} from './../app.commonmodulte'
+
+import { Routes, RouterModule } from '@angular/router';
+
+import {UiElementRoutes} from './uielement.route'
+
+import { ButtonsComponent } from './buttons.component';
+import { GeneralComponent } from './general.component';
+import { IconComponent } from './icon.component';
+import { ModalComponent } from './modal.component';
+
+import { SliderComponent } from './slider.component';
+import { TimelineComponent } from './timeline.component';
+
+@NgModule({
+  declarations: [
+      ButtonsComponent,
+      GeneralComponent,
+      IconComponent,
+      ModalComponent,
+      SliderComponent,
+      TimelineComponent
+  ],
+  imports: [
+    AppCommonModule,
+    RouterModule.forChild(UiElementRoutes),
+  ],
+  exports: [RouterModule]
+})
+export class UiElementModule {
+
+}

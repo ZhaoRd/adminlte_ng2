@@ -9,14 +9,14 @@ import { DashboardRoutes } from './dashboard.route';
 import { Routes, RouterModule } from '@angular/router';
 
 
-import { Dashboard3Component } from './dashboard3.component';
+import { Dashboard2Component } from './dashboard2.component';
 import { Dashboard1Component } from './dashboard1.component';
 
 
 @NgModule({
   declarations: [
     Dashboard1Component,
-    Dashboard3Component
+    Dashboard2Component
   ],
   imports: [
     /*
