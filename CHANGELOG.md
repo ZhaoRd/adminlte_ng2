@@ -1,5 +1,12 @@
 ## AdminLTE Angular2 Documentation  Changelog
 
+<a name="1.1.0"></a>
+# 1.1.0
+* 增加 菜单实现
+* 完善 菜单列表
+* 增加 除了实例菜单项，其他菜单的页面跳转
+
+
 <a name="1.0.0"></a>
 # 1.0.0
 * 移除之前angualr2 项目，使用angular-cli 创建项目(参考大漠穷秋的项目:https://git.oschina.net/mumu-osc/NiceFish) 
