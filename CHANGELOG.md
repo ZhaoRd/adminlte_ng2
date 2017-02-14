@@ -1,11 +1,15 @@
 ## AdminLTE Angular2 Documentation  Changelog
 
+<a name="1.2.0"></a>
+# 1.2.0
+* 修复footer不现实信息的bug
+* 使用 源代码（jquery方式）展现工作台1
+
 <a name="1.1.0"></a>
 # 1.1.0
 * 增加 菜单实现
 * 完善 菜单列表
 * 增加 除了实例菜单项，其他菜单的页面跳转
-
 
 <a name="1.0.0"></a>
 # 1.0.0

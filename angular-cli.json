@@ -20,6 +20,13 @@
             
             "../src/vendor/morris/morris.css",
 
+            "../src/vendor/bootstrap-wysihtml5/bootstrap3-wysihtml5.css",
+
+            "../src/vendor/datepicker/datepicker3.css",
+            "../src/vendor/daterangepicker/daterangepicker.css",
+
+            "../src/vendor/jvectormap/jquery-jvectormap.css",
+
             "../src/assets/adminlte/css/AdminLTE.css",
             "../src/assets/adminlte/css/skins/_all-skins.css",
             "styles.scss"
@@ -32,6 +39,21 @@
 
             "../src/vendor/morris/morris.js",
             "../src/vendor/raphael/raphael.js",
+
+            "../src/vendor/jQueryUI/jquery-ui.js",
+            
+            "../src/vendor/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js",
+            "../src/vendor/daterangepicker/daterangepicker.js",
+            "../src/vendor/datepicker/bootstrap-datepicker.js",
+
+            "../src/vendor/knob/jquery.knob.js",
+
+            "../src/vendor/jvectormap/jquery-jvectormap.min.js",
+            "../src/vendor/jvectormap/jquery-jvectormap-world-mill-en.js",
+
+            "../src/vendor/sparkline/jquery.sparkline.js",
+
+             "../src/vendor/slimScroll/jquery.slimscroll.js",
             
             "../node_modules/tinymce/tinymce.js",
             "../node_modules/tinymce/themes/modern/theme.js",
