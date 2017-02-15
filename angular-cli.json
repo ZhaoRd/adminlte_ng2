@@ -18,6 +18,8 @@
         "mobile": false,
         "styles": [
             
+            "../src/vendor/ionicons/css/ionicons.css",
+
             "../src/vendor/morris/morris.css",
 
             "../src/vendor/bootstrap-wysihtml5/bootstrap3-wysihtml5.css",
@@ -54,6 +56,9 @@
             "../src/vendor/sparkline/jquery.sparkline.js",
 
              "../src/vendor/slimScroll/jquery.slimscroll.js",
+             "../src/vendor/chartjs/Chart.js",
+
+            "../node_modules/echarts/dist/echarts.js",
             
             "../node_modules/tinymce/tinymce.js",
             "../node_modules/tinymce/themes/modern/theme.js",

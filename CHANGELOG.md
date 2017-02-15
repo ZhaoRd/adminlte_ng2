@@ -1,5 +1,17 @@
 ## AdminLTE Angular2 Documentation  Changelog
 
+<a name="1.3.0"></a>
+# 1.3.0
+* 完成 工作台2页面
+* 完成 小工具页面
+* 完成 图表->ChartJS 页面
+* 完成 图表->Morris 页面
+* 完成 图表->Inline charts 页面
+* 完成 图表->Echarts 页面
+* 移除 图表->flot
+* 新增 echart 
+* 新增 ionicon
+
 <a name="1.2.0"></a>
 # 1.2.0
 * 修复footer不现实信息的bug

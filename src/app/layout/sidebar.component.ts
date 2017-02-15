@@ -26,7 +26,7 @@ export class SidebarComponent {
         new MenuItem("charts","图表","fa fa-pie-chart","",[
             new MenuItem("chartjs", "ChartJS", "fa fa-circle-o", "/charts/chartjs"),
             new MenuItem("morris", "Morris", "fa fa-circle-o", "/charts/morris"),
-            new MenuItem("flot", "Flot", "fa fa-circle-o", "/charts/flot"),
+            //new MenuItem("flot", "Flot", "fa fa-circle-o", "/charts/flot"),
             new MenuItem("inlinechart", "Inline charts", "fa fa-circle-o", "/charts/inlinechart"),
             new MenuItem("echarts", "ECharts", "fa fa-circle-o", "/charts/echart"),
         ]),
