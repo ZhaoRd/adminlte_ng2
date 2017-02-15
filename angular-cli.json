@@ -26,8 +26,21 @@
 
             "../src/vendor/datepicker/datepicker3.css",
             "../src/vendor/daterangepicker/daterangepicker.css",
+            "../src/vendor/iCheck/all.css",
+            "../src/vendor/colorpicker/bootstrap-colorpicker.css",
+            "../src/vendor/timepicker/bootstrap-timepicker.css",
+            "../src/vendor/select2/select2.css",
 
             "../src/vendor/jvectormap/jquery-jvectormap.css",
+
+            "../src/vendor/ionslider/ion.rangeSlider.css",
+            "../src/vendor/ionslider/ion.rangeSlider.skinNice.css",
+
+            "../src/vendor/bootstrap-slider/slider.css",
+
+            "../src/vendor/datatables/dataTables.bootstrap.css",
+
+            "../src/vendor/fullcalendar/fullcalendar.css",
 
             "../src/assets/adminlte/css/AdminLTE.css",
             "../src/assets/adminlte/css/skins/_all-skins.css",
@@ -48,7 +61,14 @@
             "../src/vendor/daterangepicker/daterangepicker.js",
             "../src/vendor/datepicker/bootstrap-datepicker.js",
 
+            "../src/vendor/colorpicker/bootstrap-colorpicker.js",
+            "../src/vendor/timepicker/bootstrap-timepicker.js",
+            "../src/vendor/iCheck/icheck.js",
+            "../src/vendor/select2/select2.full.js",
+
             "../src/vendor/knob/jquery.knob.js",
+
+            "../src/vendor/ckeditor2/ckeditor.js",
 
             "../src/vendor/jvectormap/jquery-jvectormap.min.js",
             "../src/vendor/jvectormap/jquery-jvectormap-world-mill-en.js",
@@ -57,6 +77,19 @@
 
              "../src/vendor/slimScroll/jquery.slimscroll.js",
              "../src/vendor/chartjs/Chart.js",
+
+             "../src/vendor/ionslider/ion.rangeSlider.min.js",
+             "../src/vendor/bootstrap-slider/bootstrap-slider.js",
+
+             "../src/vendor/input-mask/jquery.inputmask.js",
+             "../src/vendor/input-mask/jquery.inputmask.date.extensions.js",
+             "../src/vendor/input-mask/jquery.inputmask.extensions.js",
+
+             "../src/vendor/datatables/jquery.dataTables.js",
+             "../src/vendor/datatables/dataTables.bootstrap.js",
+
+             "../src/vendor/fullcalendar/fullcalendar.js",
+
 
             "../node_modules/echarts/dist/echarts.js",
             

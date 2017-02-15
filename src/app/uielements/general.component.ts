@@ -2,7 +2,8 @@ import { Component,Inject } from '@angular/core';
 
 @Component({
     selector: 'ui-general',
-    templateUrl: './general.component.html'
+    templateUrl: './general.component.html',
+    styleUrls:  ['./general.component.css']
 })
 export class GeneralComponent { 
     

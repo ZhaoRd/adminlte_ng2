@@ -1,5 +1,17 @@
 ## AdminLTE Angular2 Documentation  Changelog
 
+<a name="1.4.0"></a>
+# 1.4.0
+* 完成 界面元素->general页面
+* 完成 界面元素->Icons页面
+* 完成 界面元素->Buttons页面
+* 完成 界面元素->Timeline页面
+* 完成 表单->general页面
+* 完成 表单->advanced页面
+* 完成 表格->simple页面
+* 完成 表格->datatables页面
+* 完成 日历页面
+
 <a name="1.3.0"></a>
 # 1.3.0
 * 完成 工作台2页面
