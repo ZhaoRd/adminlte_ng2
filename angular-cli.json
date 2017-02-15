@@ -18,6 +18,9 @@
         "mobile": false,
         "styles": [
             
+            "../node_modules/bootstrap/dist/css/bootstrap.css",
+            "../node_modules/font-awesome/css/font-awesome.css",
+
             "../src/vendor/ionicons/css/ionicons.css",
 
             "../src/vendor/morris/morris.css",

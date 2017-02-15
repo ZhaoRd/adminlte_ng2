@@ -158,27 +158,28 @@
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
-                    <div class="alert alert-danger alert-dismissible">
-                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <alert type="success">
+                        <strong>Well done!</strong> You successfully read this important alert message.
+                    </alert>
+                    <alert type="danger" dismissible="true">
                         <h4><i class="icon fa fa-ban"></i> Alert!</h4>
                         Danger alert preview. This alert is dismissable. A wonderful serenity has taken possession of my entire soul, like these
                         sweet mornings of spring which I enjoy with my whole heart.
-                    </div>
-                    <div class="alert alert-info alert-dismissible">
-                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    </alert>
+                    <alert type="info" dismissible="true">
                         <h4><i class="icon fa fa-info"></i> Alert!</h4>
                         Info alert preview. This alert is dismissable.
-                    </div>
-                    <div class="alert alert-warning alert-dismissible">
-                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    </alert>
+                    <alert type="warning" dismissible="true">
                         <h4><i class="icon fa fa-warning"></i> Alert!</h4>
                         Warning alert preview. This alert is dismissable.
-                    </div>
-                    <div class="alert alert-success alert-dismissible">
-                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    </alert>
+
+                    <alert type="success" dismissible="true">
                         <h4><i class="icon fa fa-check"></i> Alert!</h4>
                         Success alert preview. This alert is dismissable.
-                    </div>
+                    </alert>
+
                 </div>
                 <!-- /.box-body -->
             </div>
@@ -347,6 +348,21 @@
     </div>
     <!-- /.row -->
     <!-- END CUSTOM TABS -->
+
+    <h2 class="page-header">Progress Bars(ng-bootstrap2)</h2>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <progressbar value="55"></progressbar>
+        </div>
+        <div class="col-sm-4">
+            <progressbar class="progress-striped" value="22" type="warning">22%</progressbar>
+        </div>
+        <div class="col-sm-4">
+            <progressbar class="progress-striped active" max="200" value="166" type="danger"><i>166 / 200</i></progressbar>
+        </div>
+    </div>
+
     <!-- START PROGRESS BARS -->
     <h2 class="page-header">Progress Bars</h2>
 
@@ -358,6 +374,7 @@
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
+
                     <p><code>.progress</code></p>
 
                     <div class="progress">
@@ -365,6 +382,8 @@
                             aria-valuemax="100" style="width: 40%">
                             <span class="sr-only">40% Complete (success)</span>
                     </div>
+
+
                 </div>
                 <p>Class: <code>.sm</code></p>
 
@@ -593,6 +612,40 @@
                 <!-- /.box-body -->
             </div>
             <!-- /.box -->
+            <div class="box box-solid">
+                <div class="box-header with-border">Collapsible Accordion</div>
+                <div class="box-body">
+
+                    <accordion>
+                        <accordion-group heading="Collapsible Group Item #1"
+                        isOpen="isOpen">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                    3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                        </accordion-group>
+                        <accordion-group #group>
+                            <div accordion-heading>
+                                I can have markup, too!
+                                <i class="pull-right float-xs-right glyphicon" [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
+                            </div>
+                            This is just some content to illustrate fancy headings.
+                        </accordion-group>
+                        <accordion-group heading="Content 1">
+                            <p>Content 1</p>
+                        </accordion-group>
+                        <accordion-group heading="Content 2">
+                            <p>Content 2</p>
+                        </accordion-group>
+                    </accordion>
+
+
+
+                </div>
+            </div>
         </div>
         <!-- /.col -->
         <div class="col-md-6">
