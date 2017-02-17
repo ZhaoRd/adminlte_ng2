@@ -1,4 +1,4 @@
-import { Component,Inject } from '@angular/core';
+import { Component,Inject,ViewEncapsulation } from '@angular/core';
 
 
 import { APPSTATE,AppState } from './../app.state';
@@ -6,7 +6,8 @@ import { APPSTATE,AppState } from './../app.state';
 
 @Component({
     selector: 'app-footer',
-    templateUrl: './footer.component.html'
+    templateUrl: './footer.component.html',
+    encapsulation: ViewEncapsulation.None
 })
 export class FooterComponent { 
     

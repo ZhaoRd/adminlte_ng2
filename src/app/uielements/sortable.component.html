@@ -1,0 +1,60 @@
+<section class="content-header">
+    <h1>
+        UI General
+        <small></small>
+    </h1>
+
+</section>
+
+<section class="content">
+
+
+    <!-- START ALERTS AND CALLOUTS -->
+    <h2 class="page-header">String Items</h2>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="box box-default">
+                <div class="box-header with-border">
+                    <i class="fa fa-warning"></i>
+
+                    <h3 class="box-title">Left String</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <bs-sortable [(ngModel)]="itemStringsLeft" itemClass="sortable-item" itemActiveClass="sortable-item-active" placeholderItem="Drag here"
+                        placeholderClass="placeholderStyle" wrapperClass="sortable-wrapper"></bs-sortable>
+                        <pre>model: {{ itemStringsLeft | json }}</pre>
+
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+        <!-- /.col -->
+
+        <div class="col-md-6">
+            <div class="box box-default">
+                <div class="box-header with-border">
+                    <i class="fa fa-bullhorn"></i>
+
+                    <h3 class="box-title">Rgith String </h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <bs-sortable [(ngModel)]="itemStringsRight" itemClass="sortable-item" itemActiveClass="sortable-item-active" placeholderItem="Drag here"
+                        placeholderClass="sortable-item" wrapperClass="sortable-wrapper"></bs-sortable>
+                        <pre>model: {{ itemStringsRight | json }}</pre>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+    <!-- END ALERTS AND CALLOUTS -->
+
+
+
+</section>

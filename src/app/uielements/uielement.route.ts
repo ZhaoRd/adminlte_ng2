@@ -9,6 +9,7 @@ import { ModalComponent } from './modal.component';
 import { SliderComponent } from './slider.component';
 import { TimelineComponent } from './timeline.component';
 
+import { SortableDemoComponent } from './sortable.component';
 
 export const UiElementRoutes = [
     
@@ -17,6 +18,7 @@ export const UiElementRoutes = [
     { path: 'icon',  component: IconComponent },
     { path: 'modal',  component: ModalComponent },
     { path: 'slider',  component: SliderComponent },
-    { path: 'timeline',  component: TimelineComponent }
-    /**/
+    { path: 'timeline',  component: TimelineComponent },
+    { path: 'sortable',  component: SortableDemoComponent },
+    
 ];

@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common'
 
-import { AlertModule,ProgressbarModule ,AccordionModule  } from 'ng2-bootstrap';
+import { AlertModule,ProgressbarModule ,AccordionModule,
+SortableModule,ModalModule    } from 'ng2-bootstrap';
 
 import { FormsModule } from '@angular/forms';
-import { AppDirectiveModule } from './directives/app.directivemodule'
+import { AppDirectiveModule } from './directives/app.directivemodule';
 
 
 @NgModule({
@@ -17,7 +18,9 @@ import { AppDirectiveModule } from './directives/app.directivemodule'
     FormsModule,
     AlertModule.forRoot(),
     ProgressbarModule.forRoot(),
-    AccordionModule .forRoot()
+    AccordionModule .forRoot(),
+    SortableModule.forRoot(),
+    ModalModule .forRoot()
   ],
   providers: [
     
@@ -26,7 +29,9 @@ import { AppDirectiveModule } from './directives/app.directivemodule'
       FormsModule,
       AlertModule,
       ProgressbarModule,
-      AccordionModule 
+      AccordionModule ,
+      SortableModule,
+      ModalModule
   ]
 })
 export class AppCommonModule {

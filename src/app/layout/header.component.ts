@@ -1,8 +1,10 @@
-import { Component,Inject } from '@angular/core';
+import { Component,Inject,ViewEncapsulation } from '@angular/core';
 
 @Component({
-    selector: 'app-header',
-    templateUrl: './header.component.html'
+    //selector: 'app-header',
+    selector:'.main-header',
+    templateUrl: './header.component.html',
+    encapsulation: ViewEncapsulation.None
 })
 export class HeaderComponent { 
 

@@ -12,6 +12,9 @@ import { ModalComponent } from './modal.component';
 
 import { SliderComponent } from './slider.component';
 import { TimelineComponent } from './timeline.component';
+import { SortableDemoComponent } from './sortable.component';
+
+import { ModalStaticComponent } from './modal-static.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import { TimelineComponent } from './timeline.component';
       IconComponent,
       ModalComponent,
       SliderComponent,
-      TimelineComponent
+      TimelineComponent,
+      SortableDemoComponent,
+      ModalStaticComponent
   ],
   imports: [
     AppCommonModule,
