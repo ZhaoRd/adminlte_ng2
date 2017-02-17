@@ -29,6 +29,28 @@
 
     </div>
 
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box box-default">
+                <div class="box-header with-border">
+                    <i class="fa fa-warning"></i>
+
+                    <h3 class="box-title">Result Modal</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <button type="button" class="btn btn-primary" (click)="openResultModal()">打开有返回结果的窗口</button>
+                    窗口返回值:{{modalResult}}
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+        <!-- /.col -->
+
+    </div>
+
 </section>
 
 <modal-static #staticModal></modal-static>
+<modal-result #resultModal (modalSave)="resultModalClose($event)"></modal-result>

@@ -1,6 +1,7 @@
 import { Component, Inject, ViewChild ,ViewEncapsulation} from '@angular/core';
 
 import { ModalStaticComponent } from './modal-static.component';
+import { ModalResultComponent } from './modal-result.component';
 
 @Component({
     selector: 'ui-modal',
@@ -9,6 +10,9 @@ import { ModalStaticComponent } from './modal-static.component';
 export class ModalComponent {
 
     @ViewChild('staticModal') staticModal: ModalStaticComponent;
+    @ViewChild('resultModal') resultModal: ModalResultComponent;
+
+    public modalResult:string;
 
     constructor() {
 
@@ -20,8 +24,17 @@ export class ModalComponent {
     }
 
     public openStaticModal():void{
-        console.log('openStaticModal');
         this.staticModal.show();
+
+    }
+
+    public openResultModal():void{
+        this.resultModal.show();
+    }
+
+    public resultModalClose(event):void{
+        console.log(event);
+        this.modalResult=event;
 
     }
 
