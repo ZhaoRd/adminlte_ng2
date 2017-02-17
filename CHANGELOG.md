@@ -1,5 +1,13 @@
 ## AdminLTE Angular2 Documentation  Changelog
 
+<a name="1.5.0"></a>
+# 1.5.0
+* 升级 adminlte 核心到2.3.8
+* 完成 使用 ng2-bootstrap 中的alter
+* 完成 使用 ng2-bootstrap 中的modal
+* 修复 modal 打开显示错误
+......
+
 <a name="1.4.0"></a>
 # 1.4.0
 * 完成 界面元素->general页面
