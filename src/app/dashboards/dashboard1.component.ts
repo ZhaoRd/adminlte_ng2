@@ -21,6 +21,7 @@ export class Dashboard1Component {
   public ngOnInit(): void {
 
     this.initSortable();
+
     this.initEditer();
     this.initDateRange();
     this.initKonb();

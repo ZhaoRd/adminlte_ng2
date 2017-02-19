@@ -45,6 +45,8 @@
 
             "../src/vendor/fullcalendar/fullcalendar.css",
 
+            "../src/vendor/toastr/build/toastr.css",
+
             "../src/assets/adminlte/css/AdminLTE.css",
             "../src/assets/adminlte/css/skins/_all-skins.css",
             "styles.scss"
@@ -95,6 +97,8 @@
 
 
             "../node_modules/echarts/dist/echarts.js",
+
+            "../src/vendor/toastr/toastr.js",
             
             "../node_modules/tinymce/tinymce.js",
             "../node_modules/tinymce/themes/modern/theme.js",

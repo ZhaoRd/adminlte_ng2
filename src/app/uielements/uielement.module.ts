@@ -17,6 +17,8 @@ import { SortableDemoComponent } from './sortable.component';
 import { ModalStaticComponent } from './modal-static.component';
 import { ModalResultComponent } from './modal-result.component';
 
+import { ToastrDemoComponent } from './toastr.component';
+
 @NgModule({
   declarations: [
       ButtonsComponent,
@@ -27,7 +29,8 @@ import { ModalResultComponent } from './modal-result.component';
       TimelineComponent,
       SortableDemoComponent,
       ModalStaticComponent,
-      ModalResultComponent
+      ModalResultComponent,
+      ToastrDemoComponent
   ],
   imports: [
     AppCommonModule,

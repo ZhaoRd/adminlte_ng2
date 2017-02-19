@@ -40,6 +40,8 @@ export class SidebarComponent {
             new MenuItem("sortable", "Sortables", "fa fa-circle-o", "/ui/sortable"),
             new MenuItem("timeline", "Timeline", "fa fa-circle-o", "/ui/timeline"),
             new MenuItem("modals", "Modals", "fa fa-circle-o", "/ui/modal"),
+            new MenuItem("toastr", "Toastr", "fa fa-circle-o", "/ui/toastr")
+            
         ]),
         new MenuItem("forms","表单","fa fa-edit","",[
             new MenuItem("formGeneral", "General Elements", "fa fa-circle-o", "/forms/formGeneral"),

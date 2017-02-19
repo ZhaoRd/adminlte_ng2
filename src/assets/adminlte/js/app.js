@@ -247,7 +247,7 @@ function _init() {
       var _this = this;
       _this.fix();
       _this.fixSidebar();
-      $('body, html, .wrapper').css('height', 'auto');
+      $('body, .wrapper').css('height', 'auto');// remove html
       $(window, ".wrapper").resize(function () {
         _this.fix();
         _this.fixSidebar();
