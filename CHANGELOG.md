@@ -1,12 +1,21 @@
 ## AdminLTE Angular2 Documentation  Changelog
 
+<a name="1.6.0"></a>
+# 1.6.0
+* 新增 toastr 案例
+* 新增 SweetAlert 案例
+
+---
+
+
 <a name="1.5.0"></a>
 # 1.5.0
 * 升级 adminlte 核心到2.3.8
 * 完成 使用 ng2-bootstrap 中的alter
 * 完成 使用 ng2-bootstrap 中的modal
 * 修复 modal 打开显示错误
-......
+
+---
 
 <a name="1.4.0"></a>
 # 1.4.0
@@ -20,6 +29,8 @@
 * 完成 表格->datatables页面
 * 完成 日历页面
 
+---
+
 <a name="1.3.0"></a>
 # 1.3.0
 * 完成 工作台2页面
@@ -32,10 +43,14 @@
 * 新增 echart 
 * 新增 ionicon
 
+---
+
 <a name="1.2.0"></a>
 # 1.2.0
 * 修复footer不现实信息的bug
 * 使用 源代码（jquery方式）展现工作台1
+
+---
 
 <a name="1.1.0"></a>
 # 1.1.0
@@ -43,10 +58,13 @@
 * 完善 菜单列表
 * 增加 除了实例菜单项，其他菜单的页面跳转
 
+---
+
 <a name="1.0.0"></a>
 # 1.0.0
 * 移除之前angualr2 项目，使用angular-cli 创建项目(参考大漠穷秋的项目:https://git.oschina.net/mumu-osc/NiceFish) 
 
+---
 
 <a name="0.0.3"></a>
 # 0.0.3 
@@ -54,6 +72,8 @@
 * 添加 echart 插件
 * 添加 datatables基础指令
 * 其他功能完善
+
+---
 
 <a name="0.0.2"></a>
 # 0.0.2 
@@ -63,6 +83,7 @@
 * 其他
 
 ---
+
 <a name="0.0.1"></a>
 # 0.0.1 
 * 核心代码改造

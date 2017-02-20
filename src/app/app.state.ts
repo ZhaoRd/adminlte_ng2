@@ -3,7 +3,7 @@ import { OpaqueToken } from '@angular/core';
 export class AppState {
     public name:string="AdminLTE Angular2";
 
-    public version:string="1.5.0";
+    public version:string="1.6.0";
    
     public year:number=0;
 
