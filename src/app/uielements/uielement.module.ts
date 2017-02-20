@@ -18,6 +18,8 @@ import { ModalStaticComponent } from './modal-static.component';
 import { ModalResultComponent } from './modal-result.component';
 
 import { ToastrDemoComponent } from './toastr.component';
+import { SweetalertDemoComponent } from './sweetalert.component';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { ToastrDemoComponent } from './toastr.component';
       SortableDemoComponent,
       ModalStaticComponent,
       ModalResultComponent,
-      ToastrDemoComponent
+      ToastrDemoComponent,
+      SweetalertDemoComponent
   ],
   imports: [
     AppCommonModule,

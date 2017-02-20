@@ -11,6 +11,7 @@ import { TimelineComponent } from './timeline.component';
 
 import { SortableDemoComponent } from './sortable.component';
 import { ToastrDemoComponent } from './toastr.component';
+import { SweetalertDemoComponent } from './sweetalert.component';
 
 export const UiElementRoutes = [
     
@@ -22,5 +23,6 @@ export const UiElementRoutes = [
     { path: 'timeline',  component: TimelineComponent },
     { path: 'sortable',  component: SortableDemoComponent },
     { path: 'toastr',  component: ToastrDemoComponent },
+    { path: 'sweetalert',  component: SweetalertDemoComponent },
     
 ];
