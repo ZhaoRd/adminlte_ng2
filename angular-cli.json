@@ -82,7 +82,7 @@
             "../src/vendor/sparkline/jquery.sparkline.js",
 
              "../src/vendor/slimScroll/jquery.slimscroll.js",
-             "../src/vendor/chartjs/Chart.js",
+             "../node_modules/chart.js/dist/Chart.js",
 
              "../src/vendor/ionslider/ion.rangeSlider.min.js",
              "../src/vendor/bootstrap-slider/bootstrap-slider.js",
